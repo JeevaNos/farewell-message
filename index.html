@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farewell Message from Jeevanantham M</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        color: white;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #FFD700;
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        margin: 20px 0;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+
+    .social-links a {
+        color: #FFD700;
+        text-decoration: none;
+    }
+
+    .social-links a:hover {
+        text-decoration: underline;
+    }
+
+    .signature {
+        text-align: right;
+        margin-top: 30px;
+        font-style: italic;
+    }
+
+    @keyframes confetti {
+        0% { transform: translateY(0) rotate(0); }
+        100% { transform: translateY(100vh) rotate(360deg); }
+    }
+
+    .confetti {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: #FFD700;
+        position: absolute;
+        animation: confetti 4s ease-in-out infinite;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🎉 Farewell Message 🎉</h1>
+    
+    <p>Dear All,</p>
+
+    <p>As today marks my last day at Hogarth, I wanted to take a moment to express my heartfelt gratitude to each one of you. This journey has been truly incredible, and I feel so fortunate to have had the opportunity to work alongside such talented and supportive colleagues.</p>
+
+    <p>A special shoutout to my amazing Creative & Content team—you all have been nothing short of extraordinary. I consider myself incredibly lucky to have been part of such a fantastic team. The experiences I've gained here, the lessons I've learned, and the memories we've created together will always hold a special place in my heart.</p>
+
+    <p>I've cherished every moment of my time here, and I'm leaving with nothing but happy memories and immense gratitude. My wish for all of you is to stay happy, embrace challenges with ease, and continue spreading positivity wherever you go.</p>
+
+    <p>I'd love to stay connected with all of you! Please feel free to reach out to me anytime via:</p>
+
+    <div class="social-links">
+        <p>📱 <strong>WhatsApp:</strong> 9840203134</p>
+        <p>📸 <strong>Instagram:</strong> <a href="https://www.instagram.com/jeeva_nos/" target="_blank">@jeeva_nos</a></p>
+        <p>💼 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeevanantham-m-290614236" target="_blank">Jeevanantham M</a></p>
+    </div>
+
+    <p>Thank you once again for everything. Wishing you all continued success and happiness ahead!</p>
+
+    <div class="signature">
+        <p>Warm regards,<br>Jeevanantham M</p>
+    </div>
+</div>
+
+<script>
+    function createConfetti() {
+        const colors = ['#FFD700', '#FF69B4', '#87CEEB', '#98FB98', '#DDA0DD'];
+        for (let i = 0; i < 50; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.animationDelay = Math.random() * 3 + 's';
+            document.body.appendChild(confetti);
+        }
+    }
+
+    // Create confetti when page loads
+    createConfetti();
+
+    // Create new confetti every 4 seconds
+    setInterval(createConfetti, 4000);
+</script>
+</body>
+</html>
